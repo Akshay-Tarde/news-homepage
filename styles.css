@@ -19,12 +19,17 @@ body {
     color: hsl(240, 100%, 5%);
     font-size: 3em;
     margin-bottom: 0.5em;
+    line-height: 1;
 }
 
 .hero-body,
 .aside-card-body {
     color: hsl(236, 13%, 42%);
     margin: 0;
+}
+
+.aside-card-body {
+    line-height: 1.6;
 }
 
 .card-body {
@@ -37,8 +42,9 @@ body {
     color: hsl(36, 100%, 99%);
 }
 
-.aside-accent {
+.aside-card-accent {
     color: hsl(233, 8%, 79%);
+    font-size: 2em;
 }
 
 .hero-aside-title {
@@ -55,7 +61,7 @@ body {
 
 /* header */
 .header {
-    padding: 1em 0;
+    padding: 2em 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,6 +78,7 @@ body {
 .hero-aside {
     background-color: hsl(240, 100%, 5%);
     padding: 1.5em 1em;
+    margin-top: 2em;
 }
 
 .card::after {
@@ -91,6 +98,7 @@ body {
     display: none;
 }
 
+
 /* button */
 
 .hero-btn {
@@ -102,4 +110,35 @@ body {
     padding: .8em 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+/* Page aside */
+.aside {
+    margin-top: 4em;
+}
+
+.aside-card {
+    display: grid;
+    grid-template: repeat(3, auto) / 30% 65% 0px;
+    column-gap: 1em;
+    margin-bottom: 2em;
+}
+
+.aside-card-image {
+    grid-row: span 3;
+    grid-column: span 1;
+    width: 100%;
+    object-fit: cover;
+}
+
+.aside-card-accent,
+.aside-card-body,
+.aside-card-title {
+    grid-column: 2 / 3;
+    grid-row: span 1;
+}
+
+.aside-card-title {
+    margin: 0;
+    grid-row: 2 / 3;
 }
