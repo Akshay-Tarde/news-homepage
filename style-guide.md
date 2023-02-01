@@ -11,8 +11,8 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Soft orange: hsl(35, 77%, 62%) // button background color
-- Soft red: hsl(5, 85%, 63%)
+- Soft orange: hsl(35, 77%, 62%) // hero aside title (NEW)
+- Soft red: hsl(5, 85%, 63%) // button background color
 
 ### Neutral
 
