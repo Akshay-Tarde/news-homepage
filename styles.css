@@ -5,10 +5,28 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
+    font-size: 1rem;
 }
 
 .icon-menu-close,
 .hero-image-desktop,
 .nav {
     display: none;
+}
+
+/* Typography */
+.hero-title {
+    color: hsl(240, 100%, 5%);
+}
+
+.hero-body {
+    color: hsl(236, 13%, 42%);
+}
+
+.card-title {
+    color: hsl(36, 100%, 99%);
+}
+
+.aside-accent {
+    color: hsl(233, 8%, 79%);
 }
