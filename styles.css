@@ -22,10 +22,15 @@ body {
 }
 
 .hero-body,
-.card-body,
 .aside-card-body {
     color: hsl(236, 13%, 42%);
     margin: 0;
+}
+
+.card-body {
+    color: hsl(233, 8%, 79%);
+    margin-top: 0;
+    margin-bottom: 2em;
 }
 
 .card-title {
@@ -34,6 +39,11 @@ body {
 
 .aside-accent {
     color: hsl(233, 8%, 79%);
+}
+
+.hero-aside-title {
+    color: hsl(35, 77%, 62%);
+    margin-top: 0;
 }
 
 /* Layout */
@@ -57,6 +67,28 @@ body {
     object-fit: cover;
     margin-top: 1em;
     margin-bottom: 0;
+}
+
+.hero-aside {
+    background-color: hsl(240, 100%, 5%);
+    padding: 1.5em 1em;
+}
+
+.card::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: hsl(236, 13%, 42%);
+    margin: 1em 0;
+}
+
+.card:last-child .card-body {
+    margin: 0;
+}
+
+.card:last-child::after {
+    display: none;
 }
 
 /* button */
