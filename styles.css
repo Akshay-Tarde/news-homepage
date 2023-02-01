@@ -17,10 +17,15 @@ body {
 /* Typography */
 .hero-title {
     color: hsl(240, 100%, 5%);
+    font-size: 3em;
+    margin-bottom: 0.5em;
 }
 
-.hero-body {
+.hero-body,
+.card-body,
+.aside-card-body {
     color: hsl(236, 13%, 42%);
+    margin: 0;
 }
 
 .card-title {
@@ -29,4 +34,27 @@ body {
 
 .aside-accent {
     color: hsl(233, 8%, 79%);
+}
+
+/* Layout */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* hero */
+.hero-image-mobile {
+    width: 100%;
+    object-fit: cover;
+    margin-top: 1em;
+    margin-bottom: 0;
 }
