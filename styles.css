@@ -6,3 +6,9 @@ body {
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
+
+.icon-menu-close,
+.hero-image-desktop,
+.nav {
+    display: none;
+}
