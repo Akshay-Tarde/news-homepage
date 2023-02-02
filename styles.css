@@ -159,3 +159,22 @@ body {
 .attribution a:hover {
     color: hsl(5, 85%, 63%);
 }
+
+/* Media queries */
+@media (min-width: 700px) {
+
+    .hero-image-mobile,
+    .icon-menu {
+        display: none;
+    }
+
+    .hero-image-desktop,
+    .nav {
+        display: block;
+    }
+
+    .hero-image-desktop {
+        width: 100%;
+        object-fit: cover;
+    }
+}
