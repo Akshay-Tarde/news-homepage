@@ -177,4 +177,35 @@ body {
         width: 100%;
         object-fit: cover;
     }
+
+    /* container */
+    .container {
+        width: 70%;
+    }
+
+    /* header */
+    /* .header {
+        margin-top: 3em;
+        margin-bottom: 1.5em;
+    } */
+
+    /* Nav List */
+    .nav {
+        width: 40%;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-list li {
+        list-style: none;
+        padding: 0;
+    }
+
+    .nav-list a {
+        text-decoration: none;
+        color: hsl(236, 13%, 42%);
+    }
 }
