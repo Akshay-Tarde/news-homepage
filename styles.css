@@ -180,7 +180,7 @@ body {
 
     /* container */
     .container {
-        width: 70%;
+        width: 80%;
     }
 
     /* header */
@@ -208,4 +208,55 @@ body {
         text-decoration: none;
         color: hsl(236, 13%, 42%);
     }
+
+    /* Hero */
+    .hero {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero-main {
+        width: 60%;
+    }
+
+    .hero-aside {
+        margin: 0;
+        width: 35%;
+    }
+
+    .hero-main {
+        display: grid;
+        grid-template: repeat(3, auto) / repeat(2, auto);
+        gap: 2em;
+        /* align-items: start; */
+    }
+
+    .hero-image-desktop {
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+
+    .hero-title {
+        /* font-size: 4em; */
+        grid-row: 2 / -1;
+        grid-column: span 1;
+        margin: 0;
+    }
+
+    .hero-body {
+        grid-row: 2 / span 1;
+        grid-column: span 1;
+        align-self: baseline;
+        /* font-size: 1.3em; */
+    }
+
+    .hero-btn {
+        grid-row: 3 / span 1;
+        grid-column: span 1;
+        margin: 0;
+        justify-self: start;
+        align-self: center;
+    }
+
+
 }
