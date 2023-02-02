@@ -38,10 +38,6 @@ body {
     margin-bottom: 2em;
 }
 
-.card-title {
-    color: hsl(36, 100%, 99%);
-}
-
 .aside-card-accent {
     color: hsl(233, 8%, 79%);
     font-size: 2em;
@@ -50,6 +46,27 @@ body {
 .hero-aside-title {
     color: hsl(35, 77%, 62%);
     margin-top: 0;
+}
+
+/* Links */
+.card-title-link {
+    text-decoration: none;
+    color: hsl(36, 100%, 99%);
+}
+
+.card-title-link:focus,
+.card-title-link:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+.aside-card-title-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.aside-card-title-link:focus,
+.aside-card-title-link:hover {
+    color: hsl(5, 85%, 63%);
 }
 
 /* Layout */
@@ -112,6 +129,11 @@ body {
     letter-spacing: 2px;
 }
 
+.hero-btn:focus,
+.hero-btn:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
 /* Page aside */
 .aside {
     margin-top: 4em;
@@ -142,6 +164,7 @@ body {
     margin: 0;
     grid-row: 2 / 3;
 }
+
 
 /* Footer */
 .attribution {
@@ -207,6 +230,11 @@ body {
     .nav-list a {
         text-decoration: none;
         color: hsl(236, 13%, 42%);
+    }
+
+    .nav-list a:focus,
+    .nav-list a:hover {
+        color: hsl(5, 85%, 63%);
     }
 
     /* Hero */
