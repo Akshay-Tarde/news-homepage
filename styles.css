@@ -150,6 +150,7 @@ body {
     grid-row: span 3;
     grid-column: span 1;
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -287,6 +288,11 @@ body {
     /* aside */
     .aside {
         display: flex;
-        column-gap: 1em;
+        justify-content: space-between;
     }
+
+    .aside-card {
+        width: 32%;
+    }
+
 }
