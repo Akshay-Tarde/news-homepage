@@ -237,7 +237,6 @@ body {
     }
 
     .hero-title {
-        /* font-size: 4em; */
         grid-row: 2 / -1;
         grid-column: span 1;
         margin: 0;
@@ -247,7 +246,6 @@ body {
         grid-row: 2 / span 1;
         grid-column: span 1;
         align-self: baseline;
-        /* font-size: 1.3em; */
     }
 
     .hero-btn {
@@ -258,5 +256,9 @@ body {
         align-self: center;
     }
 
-
+    /* aside */
+    .aside {
+        display: flex;
+        column-gap: 1em;
+    }
 }
