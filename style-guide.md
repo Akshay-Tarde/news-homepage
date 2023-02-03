@@ -17,7 +17,7 @@ The designs were created to the following widths:
 ### Neutral
 
 Off-white: hsl(36, 100%, 99%) // card-title h3
-Grayish blue: hsl(233, 8%, 79%) // aside component number accent
+Grayish blue: hsl(233, 8%, 79%) // aside component number accent and body bg when menu is opened
 Dark grayish blue: hsl(236, 13%, 42%) // body text
 Very dark blue: hsl(240, 100%, 5%) // h1 title
 

@@ -8,9 +8,8 @@ body {
     font-size: 1rem;
 }
 
-.icon-menu-close,
 .hero-image-desktop,
-.nav {
+.icon-menu-close {
     display: none;
 }
 
@@ -74,6 +73,77 @@ body {
 .container {
     width: 90%;
     margin: 0 auto;
+}
+
+/* NAV */
+/* nav link styling */
+.nav-list li {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+}
+
+.nav-list a:focus,
+.nav-list a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+@media (max-width: 700px) {
+    /* body {
+        background-color: hsl(233, 8%, 79%);
+    } */
+
+    /* Close menu */
+    button {
+        background: 0;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .icon-menu-close {
+        border: 0;
+        font-weight: 800;
+        display: block;
+        margin-left: auto;
+        /* making it stay left */
+    }
+
+    .nav-list a {
+        color: hsl(240, 100%, 5%);
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4em;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 35%;
+        height: 100%;
+        padding: 2em;
+        background: hsl(36, 100%, 99%);
+        transform: translateX(100%);
+    }
+
+    .nav div {
+        text-align: right;
+    }
+
+    .nav-list {
+        padding: 0;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 1.3rem;
+    }
+
 }
 
 /* header */
@@ -223,20 +293,6 @@ body {
         justify-content: space-between;
     }
 
-    .nav-list li {
-        list-style: none;
-        padding: 0;
-    }
-
-    .nav-list a {
-        text-decoration: none;
-        color: hsl(236, 13%, 42%);
-    }
-
-    .nav-list a:focus,
-    .nav-list a:hover {
-        color: hsl(5, 85%, 63%);
-    }
 
     /* Hero */
     .hero {
